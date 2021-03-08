@@ -14,7 +14,6 @@ def all_houses(filename):
     Return:
       - set[str]: a set of strings
     """
-def all_houses(filename):
     houses = set()
     cohort_data = open(filename)
     for line in cohort_data:
