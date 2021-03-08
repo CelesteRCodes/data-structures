@@ -19,14 +19,14 @@ def all_houses(filename):
     houses = cohort_data.txt[3]
     return set(houses)
 
-    
+
 # thought process:
 
 # needs to be a variable to store house names in file
 # houses = ['Doubledore's Army', 'Gryffindor', 'Hufflepuff', 'Slytherin', 'Ravenclaw']
 # houses are at the 3rd index 
 # houses = cohort_data.txt[3]
-# return set(houses)
+# return set(houses) should return the houses in a set
 
 
 def students_by_cohort(filename, cohort='All'):
