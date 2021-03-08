@@ -1,4 +1,4 @@
-"""Functions to parse a file containing student data."""
+same @ """Functions to parse a file containing student data."""
 
 
 def all_houses(filename):
@@ -14,11 +14,14 @@ def all_houses(filename):
     Return:
       - set[str]: a set of strings
     """
-
-
-    houses = cohort_data.txt[3]
-    return set(houses)
-
+def all_houses(filename):
+    houses = set()
+    cohort_data = open(filename)
+    for line in cohort_data:
+        house = line.rstrtip().split('|')[2]
+        if house:                               # this checks if house 
+            houses.add(house)                   # has a valid value first
+    return houses
 
 # thought process:
 
@@ -28,6 +31,19 @@ def all_houses(filename):
 # houses = cohort_data.txt[3]
 # return set(houses) should return the houses in a set
 
+# houses = cohort_data.txt[3]
+# return set(houses)
+
+# solution:
+
+# def all_houses(filename):
+#     houses = set()
+#     cohort_data = open(filename)
+#     for line in cohort data:
+#         house = line.rstrtip().split('|')[2]
+#         if house:                               # this checks if house 
+#             houses.add(house)                   # has a valid value first
+#     return houses
 
 def students_by_cohort(filename, cohort='All'):
     """Return a list of students' full names by cohort.
