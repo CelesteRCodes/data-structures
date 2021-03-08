@@ -14,15 +14,19 @@ def all_houses(filename):
     Return:
       - set[str]: a set of strings
     """
+
+
+    houses = cohort_data.txt[3]
+    return set(houses)
+
+    
+# thought process:
+
 # needs to be a variable to store house names in file
-# houses = ['Doubledore's Army', 'Gryffindor', 'Hufflepuff', 'Slytherin']
+# houses = ['Doubledore's Army', 'Gryffindor', 'Hufflepuff', 'Slytherin', 'Ravenclaw']
+# houses are at the 3rd index 
+# houses = cohort_data.txt[3]
 # return set(houses)
-
-    houses = set()
-
-    # TODO: replace this with your code
-
-    return houses
 
 
 def students_by_cohort(filename, cohort='All'):
@@ -53,11 +57,26 @@ def students_by_cohort(filename, cohort='All'):
       - list[list]: a list of lists
     """
 
-    students = []
+    students_firstname = cohort_data.txt[0]
+    students_lastname = cohort_data.txt[1]
+    students = students_firstname + " " + students_lastname
+    cohort = cohort_data.txt[4]
+    print(sorted(students, cohort))
+    return
 
-    # TODO: replace this with your code
+# thought processs:
 
-    return sorted(students)
+    # have to sort the student names and the cohorts
+    # cohort = index 4 in the data text
+    # output should be the full name and cohort
+    # in alphabetical order
+
+    # def students_by_cohort(filename, cohort='All'):
+    #   filename = sorted(filename)
+    #   students = filename[0] + " " + filename[1]
+    #   cohort = cohort_data.txt(4)
+    #   print(sorted(students, cohort))
+
 
 
 def all_names_by_house(filename):
